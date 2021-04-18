@@ -1,0 +1,9 @@
+.contact-area{
+    background-image: url('../../../images/bgpattern.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.form-box label{
+    font-weight: bold;
+    color: black;
+}
