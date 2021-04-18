@@ -1,4 +1,4 @@
-# Apps Maker BD - A REACT Node and Mongo project 
+# Apps Maker BD Corporate- (REACT,Node,Mongo)
 It is a responsive firebase based  project using React, Node, MongoDB, Bootstrap, Font Awesome.
 Apps Maker BD is a Simple E-commerce App
 

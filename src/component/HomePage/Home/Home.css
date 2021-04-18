@@ -1,0 +1,12 @@
+
+.home-area{
+    background-color: #ffffff;
+    margin:100px auto 50px;
+}
+
+@media (max-width: 767.98px) {
+    .home-area{
+        height: auto;
+        padding:150px 0
+    }
+}

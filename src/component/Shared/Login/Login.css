@@ -1,0 +1,65 @@
+.login-area{
+    padding-top: 100px;
+}
+
+.login-box{
+    text-align: center;
+}
+
+.customAuth {
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.customAuth .form-group{
+    margin-bottom: 20px;
+}
+.customAuth input[type=text],.customAuth input[type=email] ,.customAuth input[type=password]{
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-radius:0;
+    padding:0;
+    transition:500ms;
+} 
+.form-control:focus,.form-control:hover
+{
+    box-shadow: none;
+    border-bottom: 1px solid #71ba58 i !important;
+    padding-left: 10px;
+}
+.signing {
+    background-color: #71ba58;
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 30px auto 5px;
+    padding: 10px;
+}
+
+.form-buttons-area p span{
+    cursor:pointer;
+    color:#71ba58;
+    font-weight: bold;
+}
+
+.customAuth h2 {
+    text-align: left;
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+.socialAuth button{
+    display: block;
+    margin: 5px auto;
+    width: 250px;
+    border-radius: 40px;
+}
+
+.remember-me{
+    margin-bottom: 50px;
+}
+.remember-me a{
+    color:#71ba58;
+    text-decoration: underline;
+
+}

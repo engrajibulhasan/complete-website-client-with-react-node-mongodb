@@ -1,0 +1,33 @@
+.header-area{
+    background-image: url('../../../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 200px 0 150px;
+}
+
+.header-area .content-box p{
+    color: white;
+}
+.header-area .content-box h1{
+    font-weight: 300;
+    color: yellow;
+}
+.header-area .content-box small {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.65em;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.custom-btn{
+    outline:2px solid rgba(254,254,254,0.5);
+    outline-offset: 0px;
+    transition:500ms;
+}
+
+.custom-btn:hover{
+    outline-offset: 2px;
+}

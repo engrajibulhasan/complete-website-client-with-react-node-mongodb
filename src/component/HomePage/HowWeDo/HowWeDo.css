@@ -1,0 +1,15 @@
+.what-we-do-area{
+    padding:80px 0;
+}
+
+.what-we-do-area .inner-box img{
+    width:64px;
+}
+.what-we-do-area .inner-box h4 {
+    margin: 0;
+    line-height: 50px;
+    font-size: 20px;
+}
+.what-we-do-area .inner-box p{
+    font-size: 14px;
+}

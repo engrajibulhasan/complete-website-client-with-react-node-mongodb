@@ -1,0 +1,8 @@
+.dashboard-area,.dashboard-area>.row{
+height:100%;
+}
+.order-list{}
+.right-side h4{
+    padding: 10px;
+    color: black;
+}

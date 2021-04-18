@@ -1,0 +1,30 @@
+html,body,body>div{
+  height: 100%;
+}
+a,a:hover{
+  text-decoration: none;
+}
+
+.text-theme{
+  color:#6047EC;
+}
+
+.btn-theme{
+  background-color: #6448F1; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #6448F1 , #6241EE);
+  color: white;
+  border-radius: 0;
+}
+
+.bg-theme{
+  background-color: #6448F1; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, #6448F1 , #6241EE);
+  border-radius: 0;
+}
+
+.text-theme-headline{
+  color:#7b66d8;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

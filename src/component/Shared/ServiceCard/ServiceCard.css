@@ -1,0 +1,20 @@
+.service-card{}
+.service-card .card{}
+.service-card .card .img-box {
+    height: 210px;
+    overflow: hidden;
+}
+
+
+.service-card .card .card-body h4{
+    font-weight: 300;
+}
+.service-card .card .card-body p{
+    font-size: 13px;
+}
+
+.service-card .card .card-footer{}
+.service-card .card .card-footer span {
+    color: black;
+    font-size: 22px;
+}

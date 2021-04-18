@@ -1,0 +1,36 @@
+.sideNavigation{
+    height: 100%;
+    background: rgba(0,0,0,0.01);
+}
+.sideNavigation h4{
+    padding: 10px;
+}
+.sideNavigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.sideNavigation ul li{}
+
+.sideNavigation ul li a {
+    transition: 500ms;
+    display: block;
+    padding: 10px 5px;
+}
+.sideNavigation ul li a:hover{
+    color: #6047EC;
+    background: rgba(0,0,0,0.01);
+}
+.sideNavigation ul li a:hover span{
+    color: #6047EC;
+}
+
+.sideNavigation ul li a svg{
+    color:#6047EC;
+    transition:800ms;
+}
+
+.sideNavigation ul li a:hover svg{
+    transform:rotate(360deg);
+    color: black;
+}

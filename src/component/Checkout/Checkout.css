@@ -1,0 +1,31 @@
+.checkout-area{
+    padding: 150px 0 50px;
+}
+.checkout-area h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.custom-checkout-table thead th{
+    color:gray;
+}
+
+.checkout-product-info p{
+    font-size: 13px;;
+}
+.checkout-product-info h4{}
+.checkout-product-info h4 small{}
+.checkout-product-info .img-box{
+    overflow: hidden;
+}
+.checkout-product-info .img-box img{
+    transition:500ms;
+}
+
+.checkout-product-info:hover .img-box img{
+    transform:scale(1.2);
+}
+
+.cart-total h3 {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+header{
+    width: 100%;
+    background-image: linear-gradient(#52a735, #75c05b);
+    z-index:999
+}
+
+.avatar {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgba(254,254,254,0.5);
+    overflow: hidden;
+    border-radius: 50%;
+    float:right;
+    margin-left: 10px;
+}
+.avatar img {
+    width: 100%;
+}
+
+.navbar-brand a{
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.navbar-nav a{
+    color:black !important;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav{
+        background-color: whitesmoke;
+        padding:10px;
+        border-radius:10px;
+    }
+    header{
+        padding:10px 0;
+        background-color:rgba(254,254,254,0.7);
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    }
+
+    
+}
+
