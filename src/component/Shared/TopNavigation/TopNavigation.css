@@ -28,6 +28,16 @@ header{
     color:black !important;
 }
 
+
+.custom-link{}
+.custom-link a{}
+.custom-link a svg{
+  transition:500ms;
+}
+.custom-link a:hover svg{
+  color:white;
+}
+
 @media (max-width: 767.98px) {
     .navbar-nav{
         background-color: whitesmoke;

@@ -18,7 +18,7 @@ const Checkout = () => {
     console.log(checkoutData);
     //Getting Data based on ID
     useEffect(() => {
-        const url = `http://localhost:5000/showServiceById/${id}`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/showServiceById/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -45,12 +45,13 @@ const Checkout = () => {
             totalPrice: checkoutData.price,
             discount: 0,
             quantity: 1,
+            status:3,
             deliveryCharge: 0,
             orderDate: new Date()
         }
 
         //Sending Data to API
-        const url = `http://localhost:5000/addOrder`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/addOrder`;
         fetch(url, {
             method: "POST",
             headers: {

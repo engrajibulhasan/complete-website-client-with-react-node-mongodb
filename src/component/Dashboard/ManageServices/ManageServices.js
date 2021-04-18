@@ -13,7 +13,7 @@ const ManageServices = () => {
     //Delete product start
     const handleDeleteItem = id => {
         console.log(id);
-        const url = `http://localhost:5000/deleteService/${id}`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/deleteService/${id}`;
         fetch(url,
             {
                 method: "DELETE",
@@ -32,7 +32,7 @@ const ManageServices = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/services`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/services`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

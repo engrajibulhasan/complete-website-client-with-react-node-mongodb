@@ -12,7 +12,7 @@ const Orders = () => {
 
     //Getting Orders based on email
     useEffect(() => {
-        const url = `http://localhost:5000/showOrders/${email}`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/showOrders/${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -43,7 +43,7 @@ const Orders = () => {
                                     <th>Price</th>
                                     <th>Paid BY</th>
                                     <th>Current Status</th>
-                                    <th>Action</th>
+                                    {loggedInUser.isAdmin&&<th>Action</th>}
 
                                 </tr>
                             </thead>

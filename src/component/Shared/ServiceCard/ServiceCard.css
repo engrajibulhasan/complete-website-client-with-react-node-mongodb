@@ -9,6 +9,13 @@
 .service-card .card .card-body h4{
     font-weight: 300;
 }
+.service-card .card .img-box img{
+transition:500ms
+}
+.service-card:hover .card .img-box  img{
+    transform:scale(1.5);
+}
+
 .service-card .card .card-body p{
     font-size: 13px;
 }

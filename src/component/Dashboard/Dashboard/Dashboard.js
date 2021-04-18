@@ -10,9 +10,15 @@ const Dashboard = () => {
     const [orders, setOrders] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const email = loggedInUser.email;
+    const [changeStatus,setChangeStatus]=useState(null);
+
+
+    
+
+
     //Getting Orders based on email
     useEffect(() => {
-        const url = `http://localhost:5000/showOrders/${email}`;
+        const url = `https://fathomless-ravine-82400.herokuapp.com/showOrders/${email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -21,7 +27,33 @@ const Dashboard = () => {
                     setOrders(data);
                 }
             })
-    }, [email])
+    }, [email,changeStatus])
+
+
+    //Handle Order Status
+    const handleStatus=(orderNumber,status)=>{
+        console.log('clicked',orderNumber,status)
+        const updateOrderData={
+            orderNumber:orderNumber,
+            status:status
+        }
+        const url = `https://fathomless-ravine-82400.herokuapp.com/updateOrderStatus`;
+        fetch(url, {
+            method: "POST",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(updateOrderData)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data) {
+                console.log(data)
+                setChangeStatus(orderNumber);
+            }
+        })
+    }
+
+
+
     return (
         <main className="container-fluid dashboard-area">
             <Row>
@@ -42,13 +74,13 @@ const Dashboard = () => {
                                     <th>Price</th>
                                     <th>Paid BY</th>
                                     <th>Current Status</th>
-                                    <th>Action</th>
+                                    {loggedInUser.isAdmin&& <th>Action</th>}
 
                                 </tr>
                             </thead>
                             <tbody>
                                 {
-                                    orders.map(order => <ShowOrders dataObject={order}></ShowOrders>)
+                                    orders.map(order => <ShowOrders key={order._id} handleStatus={handleStatus} dataObject={order}></ShowOrders>)
                                 }
 
 
